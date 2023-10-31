@@ -1,0 +1,246 @@
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+html, body {
+    height: 100%;
+  }
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: rgb(102, 69, 41);
+    background: linear-gradient( rgb(39, 22, 2) 0%, rgb(29, 14, 6) 4%, rgba(223, 195, 160, 0.905) 48%, rgba(255,255,255,1) 100%)  no-repeat;
+    padding: 0 8vw;
+}
+* {
+    box-sizing: border-box;
+}
+.myBtn{
+    background-color:  rgb(29, 14, 6) ;
+    color: #fefefe;
+    z-index: 2;
+    position: fixed;
+    bottom: 10vh;
+    left: 70vw;
+    margin-right: 10vw;
+    cursor: pointer;
+    font-size: 80%;
+}
+.modal {
+    display: block; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color:  rgb(29, 14, 6) ; 
+    background-color: rgba(0,0,0,0.7); 
+    font-size: 2vh;
+}  
+.modal-content {
+    background-color: #ecd2ab;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; 
+    border-radius: 10%;
+}  
+.animation{
+    width: 70%; 
+    border-radius: 10%;
+}
+.close {
+    color: rgb(29, 14, 6) ;
+    float: right;
+    font-size: 4vw;
+    font-weight: bold;
+
+}
+.close:hover,  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1{
+    font-size:4vh;
+    color: #fefefe;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20vh;
+}
+
+h1:hover {
+	animation: bounce 1s;
+}
+.slides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10vw;    
+    text-align: center
+}
+.slide{
+    transition: 1s;
+    cursor: pointer;
+    height: 30vh;
+    width: 30vw;
+    background-color: rgb(36, 24, 17) ;
+    border-radius: 10%;
+    display: none;
+    color: #fefefe;
+}
+.slide:hover{
+    transform: scale(1.5);
+}
+.prev, .next {
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 4vh;
+    transition: 0.6s ease;
+    user-select: none;
+    padding-top: 11px;
+} 
+.slide-text{
+    font-family: "georgiaRegular";
+    font-size: 2vw;
+    line-height: 100%;
+    line-height: 100%;
+    letter-spacing: 6%;
+    color: #fefefe;
+    margin-top: 4.7vw;
+}
+.slide-img{
+    border-radius: 10%;
+    margin-top: 5vh;
+    height: 20vh;
+}
+.slide .button{
+    width: 185px;
+    height: 52px;
+    background-color: #FFFFFF;
+    border: 2px solid #F1CDB3;
+    margin-bottom: 1rem;
+}
+.active{
+    display: block;
+} 
+.button{
+    width: 207px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-family: "georgiaRegular";
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    cursor: pointer;
+    border: none;
+}
+.button:hover{
+    background: #FDDCC4;
+}
+.button:active{
+    border: 2px solid #F1CDB3;
+    background-color:#FFFFFF;
+}
+.navigation{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;    
+    
+}
+.button-now{
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    background: #F1CDB3;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    font-family: "georgiaRegular";
+}
+.button-now:hover{
+    background: #FDDCC4;
+}
+.button-now:active{
+    border: 2px solid #F1CDB3;
+    background-color:#FFFFFF;
+}
+.skills-container{
+    padding-bottom: 6rem;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #806f5c;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    border-radius: 10%;
+}
+.slide:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}  
+.header-container:hover .overlay {
+    bottom:75%;
+    left: 30vw;
+    height: 25vh;
+    width: 35vw;
+}  
+.text{
+    color: white;
+    font-size: 1.35vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header-container .overlay .text{
+    margin-left: 5vw;
+}
+.portret{
+    height: 15vw;
+}
+@media(max-width: 900px){
+    .text, .slide-text{
+        font-size: 2.5vw;
+    }
+}
+@media(max-width: 500px){
+    .text, .slide-text{
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/icon.jpg">
+    <title>Hanna to Etmatic</title>
+</head>
+<body>
+    <button id="myBtn" class="myBtn">Посмотреть на солнечного зайчика еще раз</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&#9650;</span>
+            <img src="./assets/animation.gif" class="animation" alt="animation">
+        </div>
+    </div>
+    <header>
+        <div class="header-container">
+            <h1>Познакомимся поближе</h1>
+            <div class="overlay">
+                <img src="./assets/portret.jpg" class="portret" alt="portret">
+                <div class="text">Имя: Анна <br> Возраст: 23</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="skills-container">
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide active">
+                                <div class="slide-text">Образование</div>
+                                <div class="overlay">
+                                    <div class="text"> &#10022; УО "БГУИР" филиал МРК <br> Микро- и наноэлектронные технологии и системы <br> 
+                                        &#10022; Детская художественная школа искусств №2 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide active">
+                                <div class="slide-text">Навыки</div>
+                                <div class="overlay">
+                                    <div class="text">&#10022; JavaScript <br> &#10022; CSS <br> &#10022; HTML <br>&#10022; Git <br> &#10022; Figma <br> &#10022; Photoshop </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-text">Курсы</div>
+                                <div class="overlay">
+                                    <div class="text">&#10022; RS-school "JS / FRONT-END" <br>  &#10022; WayUp school  "Web designer: the explosive start" <br> &#10022; WayUp school "Web layout designer: getting
+                                        started"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-text">Иностранные языки</div>
+                                <div class="overlay">
+                                    <div class="text">&#10022; English: A2+ <br>&#10022; Czech:B2</div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-text">Секретное послание</div>
+                                <div class="overlay">
+                                    <div class="text">Хочу к вам</div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="navigation">
+                            <a class="next">&#707;</a>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+    <script src="./script.js"></script>
+</body>
+</html>
