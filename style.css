@@ -238,9 +238,30 @@ h1:hover {
     .text, .slide-text{
         font-size: 2.5vw;
     }
+    .header-container .overlay{
+        display: flex;
+    }
+}
+@media(max-width: 700px){
+    .header-container:hover .overlay {
+        bottom:75%;
+        left: 30vw;
+        height: 13vw;
+        width: 31vw;
+    }  
 }
 @media(max-height: 500px){
     .text, .slide-text{
         font-size: 1vw;
     }
+    .header-container:hover .overlay {
+        bottom:75%;
+        left: 30vw;
+        height: 5vw;
+        width: 31vw;
+    }  
+    .portret{
+        height: 5vw;
+    }
+   
 }
