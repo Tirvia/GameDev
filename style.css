@@ -239,8 +239,8 @@ h1:hover {
         font-size: 2.5vw;
     }
 }
-@media(max-width: 500px){
+@media(max-height: 500px){
     .text, .slide-text{
-        font-size: 3vw;
+        font-size: 1vw;
     }
 }
